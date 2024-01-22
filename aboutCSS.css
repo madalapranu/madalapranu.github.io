@@ -1,0 +1,73 @@
+.topnav {
+    overflow: hidden;
+    background-color: #2D3B15;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+  
+  
+h2{
+    font-family: 'Josefin Sans';
+}
+
+p{
+    font-family: 'Imprima'; 
+    font-size: 25px;
+}
+
+.w3-content{
+    max-width:1400px; 
+    background-color: #C0C0C1;
+}
+
+h1{
+    font-family: 'Josefin Sans';
+}
+
+button {
+    background-color: white;
+}
+
+li a{
+    text-decoration: none;
+    font-family: 'Imprima';
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
