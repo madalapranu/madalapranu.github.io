@@ -1,23 +1,24 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body>
-  <style>
-    /*
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    */
-    
-    .topnav {
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--W3Schools Resume CSS Links-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Custom fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+
+    <!--About CSS Stylesheet--> 
+    <link rel="stylesheet" href="aboutCSS.css">
+  </head>
+  <body>
+    <style>
+      .topnav {
       overflow: hidden;
       background-color: #2D3B15;
     }
@@ -36,85 +37,88 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     }
     
     .topnav a.active {
-      color: white;
+      background-color: #ddd;
+      color: black;
     }
-
-    /* Style the list */
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-
-/* Display list items side by side */
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
     </style>
-    </head>
-    <body>
-    
-      <div class="topnav">
-        <a><img src = "SiteID.png" width="250px" height="100px"></a>
-        <a href="index.html" style="font-family: Josefin Sans; font-size: 25px ; margin-top: 60px;">Home</a>
-        <a href="projects.html" style="font-family: Josefin Sans; font-size: 25px; margin-top: 60px;">Personal Projects</a>
-        <a href="resume.html" style="font-family: Josefin Sans; font-size: 25px; margin-top: 60px;">Resume</a>
+    <!--Top Navigation-->
+    <div class="topnav">
+      <a id="home" href="index.html"><img src = "SiteID.png" width="250px" height="100px"></a>
+      <!--<a href="index.html" style="font-family: Josefin Sans; font-size: 25; margin-top: 60px;">Home</a>-->
+      <!-- <a href="About.html" style="font-family: Josefin Sans; font-size: 25; margin-top: 60px;">About</a> -->
+      <a id="personalProjects" href="projects.html" style="font-family: Josefin Sans; font-size: 25; margin-top: 60px;">Personal Projects</a>
+      <a id="resume" href="resume.html" style="font-family: Josefin Sans; font-size: 25; margin-top: 60px;">Resume</a>
     </div>
-    
-  
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-  <ul class="breadcrumb">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html"><b>Personal Projects</b></a></li>
-  </ul>
-  <center><h1 style="font-family: Josefin Sans;">Personal Projects</h1></center>
-  <!--
-      <p style="font-family: 'Imprima'; font-size: 25px;">
-    During my college experience, I have been exploring concepts including 2D and 3D design, data visualizations, and I wanted to use this space to
-    show off some of projects. I hope you enjoy them!
-  </p>
--->
-  <center>
-    <button style="background-color: white;">
-      <a href="https://devpost.com/software/cleancart" style="text-decoration: none;">
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top">
+      <center><h1>Personal Projects</h1></center>
+
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    </div>
+  </div>
+  <div class="w3-container" style="background-color: white;">
+    <ul style="list-style: none;">
+        <button style="border-radius: 10px;">
+          <img src="wabtec-logo-png-transparent.png" width="200px" height="200px">
+          <li> <a href="ZebraApp.html"><h3>Scan It</h3></a> </li>
+      </button>
+        <button style="border-radius: 10px;">
+          <img src="wabtec-logo-png-transparent.png" width="200px" height="200px">
+          <li> <a href="MES.html"><h3>MES Smart Tooling</h3></a> </li>
+      </button>
+        <button style="border-radius: 10px;">
+          <img src="wabtec-logo-png-transparent.png" width="200px" height="200px">
+          <li> <a href="Reporting.html"><h3>OpsVision Reports</h3></a> </li>
+      </button>
+        <button style="border-radius: 10px;">
+            <img src="Vector 2.png" width="200px" height="200px">
+            <li> <a href="FallPreventionApplication.html"><h3>Fall Prevention</h3></a> </li>
+        </button>
+        <button style="border-radius: 10px;">
+            <img src="wabtec-logo-png-transparent.png" width="200px" height="200px">
+            <li> <a href="TransitSIOP.html"><h3>Transit SIOP</h3></a> </li>
+        </button>
+        <button style="border-radius: 10px;">
+          <img src="GTVertical_RGB.png" width="200px" height="200px">
+          <li> <a href="StudentHealthApp.html"><h3>Student healthcare</h3></a> </li>
+      </button>
+      <button style="border-radius: 10px;">
         <img src="Screenshot 2023-10-21 092912.png" width="200px" height="200px">
-        Clean Cart
-      </a>
-    </button>
-    <button style="background-color: white;">
-      <a href="https://github.gatech.edu/pages/LMC-2700-Aframe-Project/ProjectRepo/" style="text-decoration: none;">
-        <img src="Screenshot 2023-10-21 094431.png" width="200px" height="200px">
-        AFrame Remix
-      </a>
-    </button>
-    <button style="background-color: white;">
-      <a href="https://github.gatech.edu/pages/pmadala6/WebDevelopmentProject/" style="text-decoration: none;">
-        <img src="Screenshot 2023-10-21 093527.png" width="200px" height="200px">
-        JavaScript Assignment
-      </a>
-    </button>
-  </center>
+        <li><a href="https://devpost.com/software/cleancart"><h3>Clean Cart</h3></a> </li>
+      </button>
+    </ul>
+  </div>
+  
   <!-- End Page Container -->
-</div>  
+</div>
+<script>
+  // Get all the nav links
+  var navLinks = document.querySelectorAll('.topnav a');
+
+  // Add click event to each nav link
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      // Remove active class from all links
+      navLinks.forEach(function(link) {
+        link.classList.remove('active');
+      });
+      // Add active class to the clicked link
+      this.classList.add('active');
+    });
+  });
+
+  // Optionally, set the active class based on the current URL
+  window.onload = function() {
+    var currentPage = window.location.pathname.split('/').pop();
+    navLinks.forEach(function(link) {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  };
+</script>
   </body>
+</html>
