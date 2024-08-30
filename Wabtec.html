@@ -1,248 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.topnav {
-  overflow: hidden;
-  background-color: #2D3B15;
-}
+    <!--W3Schools Resume CSS Links-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+    <!--Custom fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #ddd;
-  color: black;
-}
-
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-
-.timeline {
-  position: relative;
-  margin: 40px auto;
-  padding: 20px 0;
-  width: 90%;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 6px;
-  height: 100%;
-  background: #C5C5C5;
-  transform: translateX(-50%);
-  z-index: -1;
-}
-
-.timeline-event {
-  position: relative;
-  margin-bottom: 50px;
-  padding-left: 50%;
-  clear: both;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.6s ease-in-out;
-}
-
-.timeline-event.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.timeline-event:nth-child(odd) {
-  padding-left: 0;
-  padding-right: 50%;
-}
-
-.timeline-event::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: #2D3B15;
-  border: 3px solid #C5C5C5;
-  border-radius: 50%;
-  top: 15px;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.timeline-event a {
-  display: block;
-  background-color: #2D3B15;
-  border: none;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  width: 80%;
-  max-width: 400px;
-  text-decoration: none;
-  color: white;
-}
-
-.timeline-event img {
-  display: block;
-  margin: 0 auto 10px;
-  width: 100px;
-  height: 100px;
-}
-
-.timeline-event h3 {
-  margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  color: white;
-}
-
-.timeline-event:nth-child(odd) a {
-  float: left;
-  margin-right: auto;
-}
-
-.timeline-event:nth-child(even) a {
-  float: right;
-  margin-left: auto;
-}
-
-.timeline-event a:hover {
-  background-color: #1a1f0e;
-}
-
-@media screen and (max-width: 768px) {
-  .timeline-event,
-  .timeline-event:nth-child(odd),
-  .timeline-event:nth-child(even) {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-  }
-
-  .timeline-event::before {
-    top: -10px;
-  }
-
-  .timeline-event a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
-</head>
-<body>
-
-<div class="topnav">
-  <a id="home" href="index.html"><img src="SiteID.png" width="250px" height="100px"></a>
-  <a id="personalProjects" href="projects.html" style="font-family: Josefin Sans; font-size: 25px; margin-top: 60px;">Personal Projects</a>
-  <a id="resume" href="resume.html" style="font-family: Josefin Sans; font-size: 25px; margin-top: 60px;">Resume</a>
-</div>
-
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-  <ul class="breadcrumb">
-    <li><a href="projects.html">Personal Projects</a></li>
-    <li>Projects at Wabtec</li>
-  </ul>
-
-  <center><h1 style="font-family: Josefin Sans; text-align: center;">Projects at Wabtec</h1></center>
-
-  <!-- Timeline Container -->
-  <div class="timeline">
-
-    <div class="timeline-event">
-        <a href="TransitSIOP.html">
-          <img src="wabtec-logo-png-transparent.png" width="200px" height="200px">
-          <h3>Transit SIOP</h3>
-        </a>
+    <!--About CSS Stylesheet--> 
+    <link rel="stylesheet" href="aboutCSS.css">
+  </head>
+  <body>
+    <style>
+      .topnav {
+      overflow: hidden;
+      background-color: #2D3B15;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #ddd;
+      color: black;
+    }
+    </style>
+    <!--Top Navigation-->
+    <div class="topnav">
+      <a id="home" href="index.html"><img src = "SiteID.png" width="250px" height="100px"></a>
+      <!--<a href="index.html" style="font-family: Josefin Sans; font-size: 25; margin-top: 60px;">Home</a>-->
+      <!-- <a href="About.html" style="font-family: Josefin Sans; font-size: 25; margin-top: 60px;">About</a> -->
+      <a id="personalProjects" href="projects.html" style="font-family: Josefin Sans; font-size: 25; margin-top: 60px;">Personal Projects</a>
+      <a id="resume" href="resume.html" style="font-family: Josefin Sans; font-size: 25; margin-top: 60px;">Resume</a>
     </div>
-
-    <div class="timeline-event">
-        <a href="MES.html">
-          <img src="wabtec-logo-png-transparent.png" width="200px" height="200px">
-          <h3>MES Smart Tooling</h3>
-        </a>
-    </div>
-
-    <div class="timeline-event">
-        <a href="Reporting.html">
-          <img src="wabtec-logo-png-transparent.png" width="200px" height="200px">
-          <h3>OpsVision Reports</h3>
-        </a>
-    </div>
-
-    <div class="timeline-event">
-      <a href="ZebraApp.html">
-        <img src="wabtec-logo-png-transparent.png" width="200px" height="200px">
-        <h3>Scan It</h3>
-      </a>
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top">
+      <ul class="breadcrumb">
+        <li><a href="projects.html">Personal Projects</a></li>
+        <li>Wabtec Internships</li>
+      </ul>
+      <center><h1>Wabtec Internship</h1></center>
+      <p>Welcome to my Wabtec internship projects page! During my time at Wabtec, I worked on a variety of projects that helped me develop new skills and gain valuable experience in the industry. These projects showcase the innovative solutions I contributed to and the hands-on experience I gained while working on real-world challenges. Explore the projects below to see what I accomplished during my internship at Wabtec.</p>
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+    <!-- Right Column -->
+    <div class="w3-twothird">
     </div>
   </div>
+  <div class="w3-container" style="background-color: white;">
+    <center>
+      <ul style="list-style: none;">
+        <button style="border-radius: 10px;">
+          <a href="TransitSIOP.html"><img src="wabtec-logo-png-transparent.png" width="200px" height="200px"></a>
+          <li><a href="TransitSIOP.html"><h3>Sales Forecast Application</h3></a></li>
+          <li><a href="TransitSIOP.html">May 2023 - July 2023</a></li>
+        </button>
+        <button style="border-radius: 10px;">
+          <a href="MES.html"><img src="wabtec-logo-png-transparent.png" width="200px" height="200px"></a>
+          <li><a href="MES.html"><h3>Intelligent Tools UI</h3></a> </li>
+          <li><a href="MES.html">May 2024 - July 2024</a></li>
+        </button>
+        <button style="border-radius: 10px;">
+          <a href="Reporting.html"><img src="wabtec-logo-png-transparent.png" width="200px" height="200px"></a>
+          <li><a href="Reporting.html"><h3>Production Data Dashboard UI</h3></a></li>
+          <li><a href="Reporting.html">May 2024 - July 2024</a></li>
+        </button>
+        <button style="border-radius: 10px;">
+          <a href="ZebraApp.html"><img src="wabtec-logo-png-transparent.png" width="200px" height="200px"></a>
+          <li><a href="ZebraApp.html"><h3>Reciept Transaction Application</h3></a></li>
+          <li><a href="ZebraApp.html">May 2024 - July 2024</a></li>
+        </button>
+      </ul>
+    </center>
+  </div>
+  
+  <!-- End Page Container -->
 </div>
-
-<script>
-// Scrollytelling with Intersection Observer API
-const timelineEvents = document.querySelectorAll('.timeline-event');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-});
-
-timelineEvents.forEach(event => observer.observe(event));
-</script>
-
 </body>
 </html>

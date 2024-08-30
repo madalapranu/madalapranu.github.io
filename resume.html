@@ -59,135 +59,35 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <!-- The Grid -->
   <div class="w3-row-padding">
   
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="MADALA_PRANATI.jpg" style="width:100%" alt="Avatar">
-        </div>
-        <div class="w3-container">
-          <h2 style="color: black;">Pranati Madala</h2>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>madalapranu@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>678-773-9061</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Angular</p>
-          <p>Figma</p>
-          <p>HTML & CSS</p>
-          <p>SQL</p>
-          <p>Confluent Kafka</p>
-          <p>Java</p>
-          <p>Python</p>
-          <p>Adobe Illustrator</p>
-          <p>Adobe Photoshop</p>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity" style="color: black;"><b>IT Finance Project Management Intern </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - July 2023</h6>
-          <p>• Consolidated and created documentation regarding points of
-            contact, team responsibilities, and reference documents for the
-            Oracle Finance Module into a SharePoint site for the IT Finance
-            Team
-            
-            </p>
-          <p>• Responsible for fixing alert messages via SQL within the Oracle
-            Finance Module to accommodate for change in the data displayed in
-            the email messages
-            </p>
-          <p>• Responsible for setting and scheduling email through Appworx to
-            send messages directly to the IT Finance Support Team
-            </p>
-          <p>
-            • Worked as a front-end developer in a team of IT interns building an
-            internal forecasting web application for Transit Sales, Inventory,
-            Operations, and Planning
-            </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Software Engineering Intern</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - July 2022</h6>
-          <p>• Created dashboards using Data Dog to monitor factors such as
-            disconnections between various components and connection
-            strength for data pipelines
-            </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Development Intern</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2020 - Apr 2021</h6>
-          <p>• Created and maintained the College and Career Center website using
-            Blackboard and Adobe Applications
-            </p>
-          <p>• Redesigned the Dual Enrollment Page of the school's counselling site
-            </p>
-          <p>• Created infographics and marketing pieces for the school counselling
-            department with Adobe Photoshop and Canva
-            </p>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>North Carolina State University</b></h5>
-          <h6 style="color: black;"><i class="fa fa-calendar fa-fw w3-margin-right w3-text-brown"></i>Aug 2021 - May 2022</h6>
-          <p>B.Sc. Computer Science</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Georgia Institute of Technology</b></h5>
-          <h6 style="color: black;"><i class="fa fa-calendar fa-fw w3-margin-right w3-text-brown"></i>Aug 2022 - May 2025</h6>
-          <p>B.Sc. Computational Media</p>
-          <hr>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
+    <object class="pdf" data="Pranati-Madala-Resume.pdf" width="100%" height="100%">
   <!-- End Grid -->
   </div>
+  <script>
+    // Get all the nav links
+    var navLinks = document.querySelectorAll('.topnav a');
   
+    // Add click event to each nav link
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        // Remove active class from all links
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+        });
+        // Add active class to the clicked link
+        this.classList.add('active');
+      });
+    });
+  
+    // Optionally, set the active class based on the current URL
+    window.onload = function() {
+      var currentPage = window.location.pathname.split('/').pop();
+      navLinks.forEach(function(link) {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        }
+      });
+    };
+  </script>
   <!-- End Page Container -->
 </div>  
-<script>
-  // Get all the nav links
-  var navLinks = document.querySelectorAll('.topnav a');
-
-  // Add click event to each nav link
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
-      // Remove active class from all links
-      navLinks.forEach(function(link) {
-        link.classList.remove('active');
-      });
-      // Add active class to the clicked link
-      this.classList.add('active');
-    });
-  });
-
-  // Optionally, set the active class based on the current URL
-  window.onload = function() {
-    var currentPage = window.location.pathname.split('/').pop();
-    navLinks.forEach(function(link) {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('active');
-      }
-    });
-  };
-</script>
   </body>
