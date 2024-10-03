@@ -61,6 +61,38 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       color: #01447e;
       text-decoration: underline;
     }
+
+    .sticky-section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    z-index: 10;
+    padding: 10px 0;
+  }
+  
+  /* Each storytelling section */
+  .story-section {
+    padding: 100px 20px; /* Gives enough space for scrolling effect */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    margin-bottom: 20px;
+  }
+
+  /* Differentiating sections */
+  .story-section:nth-child(even) {
+    background-color: #ddd;
+  }
+
+  .content {
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Imprima', sans-serif;
+  }
     </style>
     </head>
     <body>
